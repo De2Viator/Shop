@@ -4,21 +4,19 @@
     "contents": [
         {
             "quantity": 1,
-            "id_product": 124,
-            "product_name": "Keyboard",
-            "price": 1600
-        },
-        {
-            "quantity": 1,
-            "id_product": 123,
-            "product_name": "Ноутбук",
-            "price": 45600
-        },
-        {
-            "quantity": 1,
             "id_product": 456,
-            "product_name": "Мышка",
-            "price": 1000
+            "product_name": "ELLERY X M'O CAPSULE",
+            "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+            "price": 52,
+            "image": "img/features-3.png"
+        },
+        {
+            "quantity": 0,
+            "id_product": 457,
+            "product_name": "ELLERY X M'O CAPSULE",
+            "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+            "price": 52,
+            "image": "img/features-5.png"
         }
     ]
 }
