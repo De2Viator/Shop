@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Cart</title>
   </head>
-
+  <div id="app">
   <header class="header">
     <div class="header__container container">
       <div class="header__wrp">
@@ -87,80 +87,10 @@
       </section>
       <div class="shop-cart-wrp container ">
         <div class="container shopping__container">
-          <section class="stuff">
-            <div class="stuff__cart shadow">
-              <div class="stuff__cart-image ">
-                <img src="img/cart-img-1.png" alt="cart" class="cart-image" />
-              </div>
-              <div class="stuff__cart-text">
-                <div class="cart-container">
-                  <p class="cart-text-title">mango people t-&nbsp;shirt</p>
-                  <img src="img/cross.svg" alt="cross" class="cart-cross ">
-                  <p class="cart-text-desc">
-                    Price: <span class="cart-pink">$300</span>
-                  </p>
-                  <p class="cart-text-desc">Color: Red</p>
-                  <p class="cart-text-desc">Size: Xl</p>
-                  <p class="cart-text-desc">Quantity: <span class="cart-number">2</span></p>
-                </div>
-              </div>
-            </div>
-
-            <div class="stuff__cart stuff__cart_-2 shadow">
-              <div class="stuff__cart-image">
-                <img src="img/cart-img-2.png" alt="cart" class="cart-image" />
-              </div>
-              <div class="stuff__cart-text">
-                <div class="cart-container">
-                  <p class="cart-text-title">mango people t-&nbsp;shirt</p>
-                  <img src="img/cross.svg" alt="cross" class="cart-cross">
-                  <p class="cart-text-desc">
-                    Price: <span class="cart-pink">$300</span>
-                  </p>
-                  <p class="cart-text-desc">Color: Red</p>
-                  <p class="cart-text-desc">Size: Xl</p>
-                  <p class="cart-text-desc">Quantity: <span class="cart-number">2</span></p>
-                </div>
-              </div>
-            </div>
-            <div class="stuff__button">
-              <button class="stuff__button-button login">
-                Clear Shopping Cart
-              </button>
-              <button class="stuff__button-button">Continue shopping</button>
-            </div>
-          </section>
+            <main-cart ref="main-cart"></main-cart>
         </div>
-        <section class="shipping ">
-          <form action="">
-              <fieldset class="input-wrp">
-                <legend class="shipping__title">Shipping Adress</legend>
-                <label>
-                  <input type="text" class="shipping__input" placeholder="Country">
-                  <span class="visually-hidden">Country</span>
-                </label>
-                <label>
-                  <input type="text" class="shipping__input" placeholder="State">
-                  <span class="visually-hidden">State</span>
-                </label>
-                <label>
-                  <input type="text" class="shipping__input" placeholder="Postcode / Zip">
-                  <span class="visually-hidden">Postcode / Zip</span>
-                </label>
-              </fieldset>      
-            <button class="shipping__button" type="submit">get a quote</button>
-          </form>
-          <div class="shipping__order">
-            <div class="order-sub-total"><pre>sub total         $900</pre></div>
-            <div class="order-grand-total"><pre class="grand-text">GRAND TOTAL      <span class="total-pink">$900</span></pre></div>
-            <hr class="hr">
-            <button class="order-button">
-              <span class="order-button-text">proceed to checkout</span></button>            
-          </div>
-        </section>
         <!-- details/summary -->
       </div>
-      
       <section class="subscription">
         <div class="subscription__list container subscription__container">
           <div class="subscription__quote">
@@ -305,5 +235,9 @@
         </div>
       </div>
     </footer>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/MainCartComponent.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

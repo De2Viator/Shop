@@ -4,7 +4,6 @@ Vue.component("products", {
       catalogUrl: "catalogData.json",
       filtered: [],
       products: [],
-      imgProduct: "https://placehold.it/200x150",
     };
   },
   mounted() {
@@ -14,7 +13,6 @@ Vue.component("products", {
         for (let item of data) {
           this.$data.products.push(item);
           this.$data.filtered.push(item);
-          console.log(item.image)
         }
       })
       .catch((error) => {

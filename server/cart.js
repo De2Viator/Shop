@@ -20,8 +20,15 @@ let clear = (cart, req) => {
     return JSON.stringify(cart, null, 4);
 };
 
+let del = cart => {
+    cart.contents.splice(0, cart.contents.length)
+    return JSON.stringify(cart, null, 4);
+}
+
+
 module.exports = {
     add,
     change,
-    clear
+    clear,
+    del
 };
