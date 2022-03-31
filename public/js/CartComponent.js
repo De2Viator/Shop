@@ -80,7 +80,7 @@ Vue.component('cart-item', {
     template: `
     <div class="cart-item">
                     <div class="product-bio">
-                    <img :src=cartItem.image :alt=cartIte..product_name  />
+                    <img :src=cartItem.image :alt=cartItem.product_name  />
                         <div class="product-desc">
                             <div class="product-title">{{ cartItem.product_name }}</div>
                             <div class="product-quantity">Quantity: {{ cartItem.quantity }}</div>
