@@ -1,14 +1,5 @@
 {
     "amount": 46600,
     "countGoods": 2,
-    "contents": [
-        {
-            "quantity": 1,
-            "id_product": 429,
-            "product_name": "ELLERY X M'O CAPSULE",
-            "description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
-            "price": 52,
-            "image": "img/features-1.png"
-        }
-    ]
+    "contents": []
 }
