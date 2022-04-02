@@ -1,5 +1,5 @@
 
-Vue.component('cart', {
+ Vue.component('cart', {
     data(){
       return {
           cartUrl: 'getBasket.json',

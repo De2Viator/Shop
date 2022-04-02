@@ -1,4 +1,4 @@
-Vue.component('catalog',{
+let catalog = Vue.component('catalog',{
     data(){
         return {
             catalog: [],

@@ -1,4 +1,4 @@
-Vue.component("recommended-products", {
+let recommended = Vue.component("recommended-products", {
     data() {
       return {
         catalogUrl: "catalogData.json",
@@ -62,4 +62,3 @@ Vue.component("recommended-products", {
           </li>
       `,
   });
-  

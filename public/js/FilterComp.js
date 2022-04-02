@@ -1,4 +1,4 @@
-Vue.component('filter-el', {
+let filter = Vue.component('filter-el', {
     data(){
       return {
           userSearch: ''
