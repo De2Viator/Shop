@@ -1,4 +1,4 @@
-Vue.component('error', {
+let error = Vue.component('error', {
     data(){
         return {
           text: ''

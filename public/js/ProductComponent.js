@@ -1,4 +1,4 @@
-Vue.component("products", {
+let product = Vue.component("products", {
   data() {
     return {
       catalogUrl: "catalogData.json",

@@ -1,5 +1,4 @@
-
-Vue.component('main-cart', {
+let mainCart = Vue.component('main-cart', {
     data(){
       return {
           cartUrl: 'getBasket.json',
@@ -101,4 +100,4 @@ Vue.component('main-cart-item', {
               </div>
             </div>
     `
-})
+});
