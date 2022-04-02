@@ -13,6 +13,14 @@ module.exports = {
                 ]
     },
 
+    devServer: {
+        static: {
+          directory: path.join(__dirname, 'public'),
+        },
+        compress: true,
+        hot:true,
+    },
+    
     output:{
         path:path.resolve(__dirname,'public'),
         filename:'dist/[name].js',
