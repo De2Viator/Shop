@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Cart</title>
+  </head>
+  <div id="app">
+    <header-el ref="header"></header-el>
+    <main>
+      <section class="shopping-cart">
+        <div class="shopping-cart__title container">
+          <p class="shopping-cart__title-text">Shopping Cart</p>
+        </div>
+      </section>
+      <div class="shop-cart-wrp container ">
+        <div class="container shopping__container">
+            <main-cart ref="main-cart"></main-cart>
+        </div>
+      </div>
+      <subscription></subscription>
+    </main>
+    <footer-el></footer-el>
+  </div>
+  <script src="../js/Vue.js"></script>
+  <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -14,6 +14,15 @@
     text-align: center;
     text-transform: uppercase;
     position: relative;
+    &::before {
+      content: ' ';
+      height: 3px;
+      width: 63px;
+      background-color: #EF5B70;
+      position: absolute;
+      bottom:-65%;
+      margin-left: 40px;
+    }
   }
 
   &__title {
@@ -79,16 +88,6 @@
   opacity: 0.5;
 }
 
-.board__collection::before{
-  content: '';
-  height: 3px;
-  width: 63px;
-  background-color: #EF5B70;
-  position: absolute;
-  top: 160%;
-  left: 47%;
-}
-
 
 .pink {
   border: 1px solid #ff6a6a;
@@ -113,10 +112,6 @@
     margin-top: 0px;
   }
 
-  .board__collection::before{
-    left: 45%;
-  }
-
   .board__hr{
     margin-left: 63px;
     margin-right: 63px;
@@ -128,10 +123,6 @@
   .button-text {
     font-size: 10px;
     line-height: 12px;
-  }
-
-  .board__collection::before{
-    left: 42%;
   }
 
   .board__hr{

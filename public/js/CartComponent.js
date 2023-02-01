@@ -9,7 +9,7 @@
       }
     },
     mounted(){
-        this.$parent.getJson(`/api/cart`)
+        this.$parent.$parent.getJson(`/api/cart`)
             .then(data => {
                 for (let item of data.contents){
                     this.$data.cartItems.push(item);
@@ -21,7 +21,7 @@
             console.log(item)
             let find = this.cartItems.find(el => el.id_product === item.id_product);
             if(find){
-                this.$parent.putJson(`/api/cart/${find.id_product}`, {quantity: 1})
+                this.$parent.$parent.putJson(`/api/cart/${find.id_product}`, {quantity: 1})
                     .then(data => {
                         if(data.result === 1){
                             find.quantity++
@@ -29,7 +29,7 @@
                     })
             } else {
                 const prod = Object.assign({quantity: 1}, item);
-                this.$parent.postJson(`/api/cart`, prod)
+                this.$parent.$parent.postJson(`/api/cart`, prod)
                     .then(data => {
                         if(data.result === 1){
                             this.cartItems.push(prod)
@@ -38,8 +38,7 @@
             }
         },
         remove(item){
-            console.log(item)
-            this.$parent.putJson(`/api/cart/${item.id_product}/clear`,item)
+            this.$parent.$parent.putJson(`/api/cart/${item.id_product}/clear`,item)
                 .then(data => {
                     if (data.result === 1) {
                         if(item.quantity>1){

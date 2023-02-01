@@ -41,7 +41,7 @@
   margin-top: 12px;
   padding-left: 16px;
   font-weight: 300;
-  width: 315px;
+  max-width: 315px;
   color: #5d5d5d;
 }
 
@@ -57,11 +57,6 @@
 .product__item-img{
   width: 100%;
   height:70%
-}
-
-.products__button-wrp {
-  display: flex;
-  justify-content: center;
 }
 
 .products__button {
@@ -85,30 +80,10 @@
   font-style: italic;
 }
 
-.overlay,
-.buy-button {
+.overlay  {
   display: none;
   transition-duration: 0.5s;
 }
-
-.buy-button-text {
-  margin-top: 8px;
-  margin-left: 13px;
-}
-
-.product__item:hover .buy-button {
-  background: transparent;
-  color: #ffffff;
-  display: block;
-  border: 1px solid #ffffff;
-  padding: 10px;
-  top: 188px;
-  left: 110px;
-  width: 138px;
-  position: absolute;
-  display: flex;
-}
-
 
 .product__item:hover .overlay {
   background-color: rgba(58, 56, 56, 0.86);
@@ -116,15 +91,33 @@
   height: 70%;
   width: 100%;
   position: absolute;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
-.buy-button-container:hover .buy-button{
-  background-color: pink;
+.buy-button {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 10px;
+  height: 50px;
+  width: 138px;
+  display: flex;
+  align-self: center;
+  transition-duration: 0.4s;
+  &:hover {
+    background-color: pink;
+  }
+
+  &:active {
+    background-color: plum;
+  }
 }
 
-.buy-button-container:active .buy-button{
-  background-color: plum;
+.buy-button-text {
+  margin-top: 8px;
+  margin-left: 13px;
 }
 
 @media (max-width:$tablet-width){
@@ -151,11 +144,6 @@
 
   .overlay{
     height: 85%;
-  }
-
-  .buy-button{
-    left: 140px;
-    top: 35%;
   }
 }
 

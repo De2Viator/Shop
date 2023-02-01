@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Register</title>
+  </head>
+  <body>
+    <div id="app">
+        <header-el ref="header"></header-el>
+      <main>
+        <section class="registration ">
+          <div class="container register__container">
+            <p class="registration-text ">registration</p>
+          </div>
+        </section>
+              <section class="authorising">
+                <div class="container register__container">
+                  <div class="auth-main-wrp">
+                  <form>
+                    <fieldset>
+                      <div class="auth-wrp">
+                        <div><legend class="authorising__title_name">Your Name</legend></div>
+                        <div>
+                          <label>
+                            <input
+                              type="text"
+                              class="authorising__input"
+                              id="first-name"
+                              placeholder="First Name"
+                              required
+                            />
+                          </label>
+                        </div>
+                      <div>
+                        <label>
+                          <input
+                            type="text"
+                            class="authorising__input"
+                            id="last-name"
+                            placeholder="Last Name"
+                            required
+                          />
+                        </label>
+                      </div>
+                      <div class="authorising__state">
+                        <label>
+                          <input class="radio-input" type="radio" name="state" value="male">
+                          <span class="radio-label radio-label_first">Male</span>
+                        </label>
+                        <label>
+                          <input class="radio-input" type="radio" name="state" value="female">
+                          <span class="radio-label">Female</span>
+                        </label>
+                        <label>
+                          <input class="radio-input" type="radio" name="state" value="other">
+                          <span class="radio-label">Other</span>
+                        </label>
+                      </div>
+                      </div>
+                    </fieldset>
+                    <fieldset>
+                      <div class="auth-wrp">
+                      <div>
+                      <legend class="authorising__title_login">Login Details</legend>
+                      </div>
+                      <label>
+                        <div>
+                        <input
+                          type="text"
+                          class="authorising__input"
+                          id="email"
+                          placeholder="Email"
+                          required
+                        />
+                      </div>
+                      </label>
+                      <label>
+                        <div>
+                        <input
+                          type="text"
+                          class="authorising__input"
+                          id="password"
+                          placeholder="Password"
+                          required
+                        />
+                        </div>
+                      </label>
+                      </div>
+                      <p class="authorising__warning">
+                        Please use 8 or more characters, with at least 1 number and a
+                        mixture of uppercase and lowercase letters
+                      </p>
+                      <button type="submit" class="authorising__button">
+                        <div>
+                          <span class="authorising__button-text">join now</span>
+                          <img src="../img/arrow.svg" alt="arrow" />
+                        </div>
+                      </button>
+                    
+                    </fieldset>
+                    
+                  </form>
+                  <section class="privielege">
+                    <div>
+                    <p class="privielge__title">LOYALTY HAS ITS PERKS</p>
+                    <p class="privielge__desc">
+                      Get in on the loyalty program where you can earn points and unlock
+                      serious perks. Starting with these as soon as you join:
+                    </p>
+                </div>
+                <div>
+                  <ul class="privielege__list">
+                    <li class="privielege__item"><p class="privielege__item-text">15% off welcome offer</p></li>
+                    <li class="privielege__item"><p class="privielege__item-text">Free shipping, returns and exchanges on all orders</p></li>
+                    <li class="privielege__item"><p class="privielege__item-text">$10 off a purchase on your birthday</p></li>
+                    <li class="privielege__item"><p class="privielege__item-text">Early access to products</p></li>
+                    <li class="privielege__item"><p class="privielege__item-text">Exclusive offers & rewards</p></li>
+                  </ul>
+                </div>
+                </section>
+              </div>
+            </div>
+          </section>
+          <subscription></subscription>
+      </main>
+      <footer-el></footer-el>
+      <script src="../js/Vue.js"></script>
+      <script src="../js/main.js"></script>
+    </div>
+  </body>
+</html>

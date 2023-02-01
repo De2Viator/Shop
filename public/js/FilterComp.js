@@ -21,6 +21,6 @@ let filter = Vue.component('filter-el', {
                 />
               </svg>
             </span>
-            <input type="text" class="loop__input" v-model="userSearch" @input="$parent.$refs.products.filter(userSearch)"/>
+            <input type="text" class="loop__input" v-model="userSearch" @input="$parent.$parent.$refs.products.filter(userSearch)"/>
           </label>`
 })

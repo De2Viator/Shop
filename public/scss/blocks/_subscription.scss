@@ -1,6 +1,6 @@
 .subscription {
-    background-size: contain;
-    background:url(../../img/sub-back.png) rgba(244, 244, 244, 0.7);
+    background-size: cover;
+    background-image: url('../img/sub-back.png');
   }
   
   .subscription__list {
@@ -100,10 +100,6 @@
   }
 
   @media (max-width:$tablet-width){
-
-    .subscription{
-      background-size: cover;
-    }
     .subscription__list{
       flex-direction: column;
     }

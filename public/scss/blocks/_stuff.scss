@@ -88,17 +88,18 @@
   transition-duration:0.7s;
 }
 
+.stuff {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .stuff__button-button:hover{
   background-color: #000;
   color: #fff;
 }
 
 @media (max-width: $tablet-width) {
-  .stuff {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
 
   .stuff__cart-text {
     width: 472px;
