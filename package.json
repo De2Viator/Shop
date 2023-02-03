@@ -14,7 +14,7 @@
   "main": "main.js",
   "scripts": {
     "build": "npm i",
-    "start":"rimraf ./public/dist && webpack node server/server.js"
+    "start":"webpack"
   },
   "repository": {
     "type": "git",

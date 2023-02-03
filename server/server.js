@@ -4,7 +4,7 @@ const app = express();
 const cart = require('./cartRouter');//обработчик всех запросов корзины
 
 app.use(express.json());
-app.use('/', express.static('public/dist'));
+app.use('/', express.static('public'));
 app.use('/api/cart', cart);
 
 app.get('/api/products', (req, res) => {
