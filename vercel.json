@@ -1,6 +1,0 @@
-{
-    "outputDirectory":"./public/dist",
-    "routes": [
-        { "src": "/api/*", "dest": "./server/server.js" }
-    ]
-}
