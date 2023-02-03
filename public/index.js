@@ -1,12 +1,12 @@
 //IMAGES
 import './img/logo.svg';
-import './img/Man.jpg';
+import './img/man.jpg';
 import './img/loop.svg';
 import './img/crown.png';
 import './img/truck.png';
 import './img/sales.png';
 import './img/sub-back.png';
-import './img/arrow.svg';
+import './img/Arrow.svg';
 import './img/arrow-down.svg';
 import './img/chevrone-left.svg';
 import './img/chevrone-right.svg';
