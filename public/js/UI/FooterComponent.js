@@ -1,6 +1,6 @@
 export default Vue.component("footer-el", {
     template: `
-            <footer class="footer container">
+            <footer class="footer">
             <div class="footer__main container footer__container">
             <span class="footer__copyright"
                 >© 2021 Brand All Rights Reserved.</span

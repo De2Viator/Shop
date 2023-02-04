@@ -12,10 +12,15 @@
         this.$parent.$parent.getJson(`/api/cart`)
             .then(data => {
                 for (let item of data.contents){
+                    console.log(this.$props)
+                    if(this.$props.isnested) {
+                        item.image = '../' + item.image;
+                    }
                     this.$data.cartItems.push(item);
                 }
             });
     },
+    props:['isnested'],
     methods: {
         addProduct(item){
             console.log(item)

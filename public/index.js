@@ -12,6 +12,7 @@ import './img/chevrone-left.svg';
 import './img/chevrone-right.svg';
 import './img/Ellipse.png';
 import './img/mini-baggage.svg';
+import './img/cross.svg';
 import './img/features-1.png';
 import './img/features-2.png';
 import './img/features-3.png';

@@ -1,6 +1,7 @@
 import '../CartComponent';
 import '../FilterComp'
 export default Vue.component("header-el", {
+    props: ['isnested'],
     template: `
     <header class="header">
     <div class="header__container container">
@@ -45,7 +46,7 @@ export default Vue.component("header-el", {
                 class="up-img"
               /></svg
           ></a>
-          <cart ref="cart"></cart>
+          <cart :isnested="isnested" ref="cart"></cart>
         </div>
       </div>
     </div>

@@ -10,6 +10,7 @@ let mainCart = Vue.component('main-cart', {
         this.$parent.getJson(`/api/cart`)
             .then(data => {
                 for (let item of data.contents){
+                    item.image = '../' + item.image
                     this.$data.cartItems.push(item);
                     this.$data.shippingPrice += item.price * item.quantity;
                 }
@@ -89,7 +90,7 @@ Vue.component('main-cart-item', {
               <div class="stuff__cart-text">
                 <div class="cart-container">
                   <p class="cart-text-title">{{ cartItem.product_name }}</p>
-                  <img @click="$emit('remove', cartItem)" src="img/cross.svg" alt="cross" class="cart-cross">
+                  <img @click="$emit('remove', cartItem)" src="../img/cross.svg" alt="cross" class="cart-cross">
                   <p class="cart-text-desc">
                     Price: <span class="cart-pink">\${{ cartItem.price }}</span>
                   </p>
