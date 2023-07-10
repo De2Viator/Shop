@@ -13,8 +13,8 @@
   "version": "1.5.0",
   "main": "main.js",
   "scripts": {
-    "start": "rimraf ./public/dist && webpack && npm run deploy",
-    "deploy": "node server/server.js"
+    "start": "node server/server.js",
+    "start:dev": "rimraf ./public/dist && webpack && npm run deploy"
   },
   "repository": {
     "type": "git",
