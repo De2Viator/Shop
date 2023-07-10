@@ -33,7 +33,6 @@ app.put('/api/cart/:id/clear', (req, res) => {
 });
 
 app.get('/api/products', (req, res) => {
-    console.log(cart)
     fs.readFile('server/db/products.json', 'utf-8', (err, data) => {
         if(err){
             res.sendStatus(404, JSON.stringify({result:0, text: err}));
